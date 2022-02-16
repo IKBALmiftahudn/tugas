@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function hitungLuasKeliling(){
+            var panjang,tinggi,alas,keliling,luas;
+            panjang=parseInt(document.getElementById("panjang").value);
+            tinggi=parseInt(document.getElementById("tinggi").value);
+            alas=parseInt(document.getElementById("alas").value);
+            keliling=panjang * 3;
+            luas=1/2 * alas * tinggi;
+            document.getElementById("keliling").value=keliling;
+            document.getElementById("luas").value=luas;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>panjang:<input type="text" id="panjang"></p>
+        <p>tinggi:<input type="text" id="tinggi"></p>
+        <p>alas:<input type="text" id="alas"></p>
+        <p><input type="button" value="Hitung" onclick="hitungLuasKeliling()"></p>
+        <p>keliling:<input type="text" id="keliling"></p>
+        <p>luas:<input type="text" id="luas"></p>
+    </form>
+</body>
+</html>

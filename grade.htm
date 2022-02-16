@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function konversi(){
+        var nilai_a = Number(document.getElementById("a").value);
+        var nilai_huruf;
+        if((nilai_a>90)&&(nilai_a<=100))
+        nilai_huruf = 'a';
+        else if((nilai_a>80)&&(nilai_a<=89))
+        nilai_huruf = 'b';
+        else if((nilai_a>60)&&(nilai_a<=79))
+        nilai_huruf = 'c';
+        else if((nilai_a>40)&&(nilai_a<=59))
+        nilai_huruf = 'd';
+        else if((nilai_a>30)&&(nilai_a<=39))
+        nilai_huruf = 'e';
+        else if((nilai_a>100))
+       alert("maaf nilai terlalu jauh untuk dijangkau")
+         
+        document.getElementById("c").value = nilai_huruf;
+        }
+        </script>
+        </head>
+        <body>
+        <div id="judul">Konversi Nilai</div>
+        
+        <input type="text" name="a" id="a" size="2">
+        <input type="text" name="c" id="c" size="2">
+        <br>
+        <input type="button" name="tombol" id="tombol" value="konversi" onClick="konversi()"/>
+</body>
+</html>

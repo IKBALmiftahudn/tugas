@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function hitungLuasKeliling(){
+            var sisi;
+            sisi=parseInt(document.getElementById("sisi").value);
+            luas=sisi*4;
+            document.getElementById("luas").value=luas;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>Sisi :<input type="text" id="sisi"></p>
+        <p><input type="button" value="Hitung" onclick="hitungLuasKeliling()"></p>
+        <p>luas:<input type="text" id="luas"></p>
+    </form>
+</body>
+</html>
